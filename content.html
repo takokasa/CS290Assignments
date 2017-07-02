@@ -1,0 +1,150 @@
+﻿/******************************************************
+** Filename: content.html  
+** Author: Michael Waldrop   
+** Date: 7/2/17  
+** Description: Assignment 1:  An html file with a table (6x6), a list with at least 3 items, a div, and two forms (post and get).
+******************************************************/
+
+<table>
+<caption>Color mixing table (primary colors + some extras)</caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th><b>Red</b></th>
+            <th><b>Yellow</b></th>
+            <th><b>Blue</b></th>
+            <th><b>White</b></th>
+            <th><b>Black</b></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th><i>Red</i></th>
+            <td>Red</td>
+            <td>Orange</td>
+            <td>Violet/Purple</td>
+            <td>Pink</td>
+            <td>Brown(ish)</td>
+        </tr>
+        <tr>
+            <th><i>Yellow</i></th>
+            <td>Orange</td>
+            <td>Yellow</td>
+            <td>Green</td>
+            <td>Light Yellow</td>
+            <td>Olive/Gold</td>
+        </tr>
+        <tr>
+            <th><i>Blue</i></th>
+            <td>Violet/Purple</td>
+            <td>Green</td>
+            <td>Blue</td>
+            <td>Light Blue</td>
+            <td>Navy</td>
+        </tr>
+        <tr>
+          <th><i>White</i></th>
+          <td>Pink</td>
+          <td>Light Yellow</td>
+          <td>Light Blue</td>
+          <td>White</td>
+          <td>Gray</td>
+        </tr>
+        <tr>
+          <th><i>Black</i></th>
+          <td>Brown(ish)</td>
+          <td>Olive/Gold</td>
+          <td>Navy</td>
+          <td>Gray</td>
+          <td>Black</td>
+        </tr>
+    </tbody>
+     <tfoot>
+          <th colspan="2">White = no colors</th>
+          <th colspan="4">Black = All colors blended</th>
+        </tfoot>
+</table>
+
+<ul>
+<li>Primary Colors</li>
+<li><ul>
+<li>Red</li>
+<li>Yellow</li>
+<li>Blue</li>
+</ul></li>
+<li>Secondary Colors</li>
+<li><ul>
+<li>Green</li>
+<li>Orange</li>
+<li>Violet</li>
+</ul></li>
+<li>Tertiary Colors</li>
+<li><ul>
+<li>Red-Orange</li>
+<li>Red-Violet</li>
+<li>Yellow-Green</li>
+<li>Yellow-Orange</li>
+<li>Blue-Green</li>
+<li>Blue-Violet</li>
+</ul></li>
+</ul>
+
+<div class="outer-content">
+<div class="inner-content">
+Pink and Aqua go well together, I think.
+</div>
+</div>
+
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+<fieldset>
+<legend>Welcome!  Are you ready to choose the best candy?</legend>
+<label>First we need your name:
+<input type="text" name="text_input" size="24" maxlength="80"></label>
+<br />
+<label>Now we need your age:
+<input type="number" name="numerical_input" size="8" maxlength="8"></label>
+<br />
+<label>Finally, enter a password for your entry:
+<input type="password" name="password_input" size="12" maxlength="24"></label>
+</fieldset>
+<fieldset>
+<legend>Now you need to decide which of these is the best.</legend>
+<p>The best candy is:
+<br />
+<label>
+  <input type="radio" name="candy" value="snickers" />Snickers</label>
+<label>
+  <input type="radio" name="candy" value="skittles" />Skittles</label>
+<label>
+  <input type="radio" name="candy" value="mentos" />Mentos</label>
+  <br />
+  <input type="submit" value="Submit form" />
+  </fieldset>
+</form>
+
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+<fieldset>
+<legend>Welcome!  Are you ready to choose the best candy?</legend>
+<label>First we need your name:
+<input type="text" name="text_input" size="24" maxlength="80"></label>
+<br />
+<label>Now we need your age:
+<input type="number" name="numerical_input" size="8" maxlength="8"></label>
+<br />
+<label>Finally, enter a password for your entry:
+<input type="password" name="password_input" size="12" maxlength="24"></label>
+</fieldset>
+<fieldset>
+<legend>Now you need to decide which of these is the best.</legend>
+<p>The best candy is:
+<br />
+<label>
+  <input type="radio" name="candy" value="snickers" />Snickers</label>
+<label>
+  <input type="radio" name="candy" value="skittles" />Skittles</label>
+<label>
+  <input type="radio" name="candy" value="mentos" />Mentos</label>
+  <br />
+  <input type="submit" value="Submit form" />
+  </fieldset>
+</form>

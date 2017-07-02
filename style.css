@@ -1,0 +1,41 @@
+﻿/******************************************************
+** Filename: style.css
+** Author: Michael Waldrop   
+** Date: 7/2/17  
+** Description: Assignment 1:  A css file with for a table (6x6), a list with at least 3 items, a div, and two forms (post and get).
+******************************************************/
+
+table{
+    border-style:solid;
+}
+th, td{
+    border-style:solid;
+}
+
+th {
+  font-weight:normal;
+}
+
+tbody tr:nth-child(even) {
+  background-color:orange;
+}
+
+tbody tr:nth-child(odd) {
+  background-color:lime;
+}
+
+div.outer-content {
+  position:relative;
+  margin-left:0px;
+  margin-top:20px;
+  background-color:pink;
+  width:75%;
+  padding:10px;
+}
+
+div.inner-content {
+  text-align:center;
+  margin:0 auto;
+  background-color:aqua;
+  width:75%;
+}
